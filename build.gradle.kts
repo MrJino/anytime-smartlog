@@ -1,9 +1,12 @@
 plugins {
     kotlin("jvm") version "1.9.23"
+    id("maven-publish")
 }
 
 group = "noh.jinil.utils"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
+
+apply("publish.gradle")
 
 repositories {
     mavenCentral()
