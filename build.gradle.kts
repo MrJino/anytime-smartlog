@@ -6,7 +6,7 @@ plugins {
 group = "noh.jinil.utils"
 version = "1.0.0"
 
-apply("publish.gradle")
+apply("publish.gradle.kts")
 
 repositories {
     mavenCentral()
