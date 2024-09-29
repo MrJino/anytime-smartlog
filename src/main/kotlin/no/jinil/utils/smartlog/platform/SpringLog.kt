@@ -11,6 +11,14 @@ class SpringLog(
     var jsonMaxArray = 2
     private val jsonHelper = JsonHelper { jsonMaxArray }
 
+    fun testSetup() {
+        lifecycle("🍎 testSetup() ******************************")
+    }
+
+    fun testFunc(vararg params: String) {
+        lifecycle("🍒 ${makeParam(*params)}")
+    }
+
     fun controller(method: String, requestUri: String) {
         lifecycle("🔵 [${method}] ------------ $requestUri")
     }

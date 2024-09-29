@@ -16,7 +16,7 @@ if (secretPropsFile.exists()) {
 }
 
 extra["PUBLISH_GROUP_ID"] = "noh.jinil.utils"
-extra["PUBLISH_VERSION"] = "1.1.1"
+extra["PUBLISH_VERSION"] = "1.1.2"
 extra["PUBLISH_ARTIFACT_ID"] = "SmartLog"
 
 val sourceSets = project.extensions.getByType<JavaPluginExtension>().sourceSets
