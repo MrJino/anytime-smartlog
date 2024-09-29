@@ -1,4 +1,4 @@
-package no.jinil.utils.smartlog
+package noh.jinil.utils.smartlog
 
 import com.google.gson.Gson
 import org.json.JSONArray

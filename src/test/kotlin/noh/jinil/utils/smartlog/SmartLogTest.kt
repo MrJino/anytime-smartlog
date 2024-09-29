@@ -1,4 +1,4 @@
-package no.jinil.utils.smartlog
+package noh.jinil.utils.smartlog
 
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test

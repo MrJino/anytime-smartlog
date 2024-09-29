@@ -1,6 +1,6 @@
-package no.jinil.utils.smartlog.platform
+package noh.jinil.utils.smartlog.platform
 
-import no.jinil.utils.smartlog.JsonHelper
+import noh.jinil.utils.smartlog.JsonHelper
 
 class SpringLog(
     private val exception: (String) -> Unit,

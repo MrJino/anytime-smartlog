@@ -1,4 +1,4 @@
-package no.jinil.utils.smartlog
+package noh.jinil.utils.smartlog
 
 data class SampleData(
     val users: List<SampleUser>

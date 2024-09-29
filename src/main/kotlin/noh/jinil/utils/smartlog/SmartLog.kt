@@ -1,6 +1,6 @@
-package no.jinil.utils.smartlog
+package noh.jinil.utils.smartlog
 
-import no.jinil.utils.smartlog.platform.SpringLog
+import noh.jinil.utils.smartlog.platform.SpringLog
 
 class SmartLog(
     exception: (String) -> Unit,
