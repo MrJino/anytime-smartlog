@@ -5,10 +5,10 @@ import noh.jinil.utils.smartlog.JsonHelper
 class SpringLog(
     private val exception: (String) -> Unit,
     private val lifecycle: (String) -> Unit,
-    private val debug: (String) -> Unit,
+    private val debugging: (String) -> Unit,
     private val verbose: (String) -> Unit,
 ) {
-    var jsonMaxArray = 2
+    private var jsonMaxArray = 2
     private val jsonHelper = JsonHelper { jsonMaxArray }
 
     fun testSetup() {
@@ -24,15 +24,15 @@ class SpringLog(
     }
 
     fun service(vararg params: String) {
-        debug("🟠 ${makeParam(*params)}")
+        debugging("🟠 ${makeParam(*params)}")
     }
 
     fun usecase(vararg params: String) {
-        debug("⚪️ ${makeParam(*params)}")
+        debugging("⚪️ ${makeParam(*params)}")
     }
 
     fun function(vararg params: String) {
-        debug(makeParam(*params))
+        debugging(makeParam(*params))
     }
 
     fun detail(vararg params: String) {
@@ -46,7 +46,7 @@ class SpringLog(
     }
 
     fun state(log: String) {
-        debug("‼️ $log")
+        debugging("‼️ $log")
     }
 
     fun data(tag: String, data: Any) {

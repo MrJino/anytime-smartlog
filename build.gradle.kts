@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "noh.jinil.utils"
-version = "1.1.3"
+version = "1.2.0"
 
 apply("publish.gradle.kts")
 
@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.json:json:20231013")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.code.gson:gson:2.10")
 
     testImplementation(kotlin("test"))
 }

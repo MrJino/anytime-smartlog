@@ -8,7 +8,7 @@ class SmartLogTest {
     private val smartLog = SmartLog(
         exception = { log -> println(log) },
         lifecycle = { log -> println(log) },
-        debug = { log -> println(log) },
+        debugging = { log -> println(log) },
         verbose = { log -> println(log) }
     ).spring
 
